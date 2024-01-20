@@ -41,6 +41,7 @@ header {
     padding-left: 3em;
     width: 25%;
     flex-direction: row;
+    max-height: 500px ;
 }
 
 #h2 {
@@ -62,8 +63,7 @@ section p {
 }
 
 aside {
-    display: grid;
-    width: 20%;
+    width: 70%;
 }
 
 #info {
@@ -81,9 +81,56 @@ aside {
 
 hr {
     margin: 40px 0;
+    width: 90%;
+}
+
+#cardapio {
+    display: flex;
 }
 
 #menu {
-    float: inline-end;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+#menu p {
+    color: red;
+    font-style: bold;
+}
+
+#tudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#item {
+    flex-basis: 33%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#item img {
+    border-radius: 3%;
+    box-shadow: 2px 2px 2px;
+}
+
+#pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#pages h6 {
+    font-size: 1em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    border: 0.05em solid #c0c0c0;
+}
+
+#pages i {
+    padding: 0.2em;
 }
